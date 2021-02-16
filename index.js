@@ -42,6 +42,9 @@ app.get("/", (req, res) => {
   res.render('index');
   // res.sendFile(__dirname + "/index.html");
 });
+app.get('/order', (req, res) => {
+  res.render('order')
+})
 app.get("/fail", (req, res) => {
   res.render('failed');
 })
