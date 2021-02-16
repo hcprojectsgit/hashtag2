@@ -50,12 +50,31 @@
             width: 20%;
             height: 20%;
         }
+
+        .maindiv {
+            margin-top: 5%;
+        }
+
+        @media only screen and (max-width: 960px) {
+
+            /* styles for browsers larger than 960px; */
+            .maindiv {
+                margin-top: 20%;
+                background-color: red;
+
+            }
+
+            .mytabel {
+                overflow: scroll;
+            }
+
+        }
     </style>
 </head>
 
 <body>
     <%- include('partials/navbar')%>
-        <div class="offset-xl-2  col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12  padding" style="margin-top: 5%;">
+        <div class="offset-xl-2  col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12   padding maindiv">
             <div class="card">
 
                 <div class="card-body">
@@ -72,7 +91,7 @@
 
                         </div>
                     </div>
-                    <div class="table-responsive-sm">
+                    <div class="table-responsive-sm" id="mytabel">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
