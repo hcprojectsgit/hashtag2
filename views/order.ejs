@@ -9,19 +9,128 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Hashtag Planners Register for K2K The Phoenix Spirit</title>
     <style>
+        body {
+            background-color: #000
+        }
 
+        .padding {
+            padding: 2rem !important
+        }
+
+        .card {
+            margin-bottom: 30px;
+            border: none;
+            -webkit-box-shadow: 0px 1px 2px 1px rgba(154, 154, 204, 0.22);
+            -moz-box-shadow: 0px 1px 2px 1px rgba(154, 154, 204, 0.22);
+            box-shadow: 0px 1px 2px 1px rgba(154, 154, 204, 0.22)
+        }
+
+        .card-header {
+            background-color: #fff;
+            border-bottom: 1px solid #e6e6f2
+        }
+
+        h3 {
+            font-size: 20px
+        }
+
+        h5 {
+            font-size: 15px;
+            line-height: 26px;
+            color: #3d405c;
+            margin: 0px 0px 15px 0px;
+            font-family: 'Circular Std Medium'
+        }
+
+        .text-dark {
+            color: #3d405c !important
+        }
+
+        .logo1 img {
+            width: 20%;
+            height: 20%;
+        }
     </style>
 </head>
 
 <body>
     <%- include('partials/navbar')%>
+        <div class="offset-xl-2  col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12  padding" style="margin-top: 5%;">
+            <div class="card">
 
-        <h1>thise is order page </h1>
-        <div class="container">
-            <div class="d-flex justify-content-center align-items-center w-50 h-50">thise is our div </div>
-            <h1>Lorem ipsum dolor sit amet.</h1>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-sm-9">
+                            <div class="logo1">
+                                <img src="./assets/logo1.png" alt="thise is di">
+                                <p>GSTIN NO : 6876862876824</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3   ">
+                            <img src="./assets/logo1.png" alt="logo2" class="img-fluid"
+                                style="width: 50%; height: 50%;">
 
+                        </div>
+                    </div>
+                    <div class="table-responsive-sm">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="center">Order id</th>
+                                    <th>Bank Transaction Id</th>
+                                    <th>Item desc</th>
+                                    <th class="right">Amount</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="center">68787</td>
+                                    <td class="left strong">7886</td>
+                                    <td class="left">hashtagplanner registration amount K2k phenox spirit </td>
+                                    <td class="right"> ₹1000</td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-5">
+                        </div>
+                        <div class="col-lg-4 col-sm-5 ml-auto">
+                            <table class="table table-clear">
+                                <tbody>
+                                    <tr>
+                                        <td class="left">
+                                            <strong class="text-dark">Total</strong>
+                                        </td>
+                                        <td class="right">₹1000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left">
+                                            <strong class="text-dark">Tax (18%)</strong>
+                                        </td>
+                                        <td class="right">₹80</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left">
+                                            <strong class="text-dark">Total Amount</strong>
+                                        </td>
+                                        <td class="right">
+                                            <strong class="text-dark">₹1080</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+
 
         <%- include('partials/footer')%>
 
